@@ -10,6 +10,7 @@ function UsersCard(props){
             <h4>Gender: {props.gender} </h4>
             <p>Fellow at Codetrain</p>
             <button className="btn btn-danger" onClick={() => props.onDelete(props.firstname)}>Delete</button>
+            <button className="btn btn-primary" onClick={() => props.onUpdate(props.firstname, props.lastname, props.gender)}>Update</button>
           </div>
         </div>
     );
